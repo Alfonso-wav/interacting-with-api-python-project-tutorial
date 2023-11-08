@@ -1,6 +1,7 @@
-# Import libraries
-from dotenv import load_dotenv
+
+
 import os
+from dotenv import load_dotenv
 from spotipy.oauth2 import SpotifyClientCredentials
 from spotipy import Spotify
 import matplotlib.pyplot as plt
@@ -37,5 +38,4 @@ sns.scatterplot(data = top3, x = "duration_m", y = "popularity", hue = "name")
 plt.xlabel('Duration')
 plt.ylabel('Popularity')
 plt.legend()
-plt.savefig("Funkadelic_Top3_D/P-relation.png")
-plt.show()
+plt.savefig("/workspaces/interacting-with-api-python-project-tutorial/image/Funkadelic_Top3_DP-relation.png")
